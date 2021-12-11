@@ -1,0 +1,82 @@
+body {
+  font-family: "Cairo", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vh;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  row-gap: 40px;
+}
+.emojis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.emojis button {
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.emojis i {
+  font-size: 30px;
+}
+.month {
+  width: 300px;
+  text-align: center;
+}
+.month h2 {
+  margin-bottom: -10px;
+}
+.week_days_container,
+.days_container {
+  display: grid;
+  grid-template-columns: repeat(7, 35px);
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.days_container div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.days_container span {
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 10px;
+  color: white;
+  cursor: pointer;
+}
+.days_container span:hover {
+  transform: scale(1.1, 1.1);
+}
